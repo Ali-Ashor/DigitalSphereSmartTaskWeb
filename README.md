@@ -1,15 +1,100 @@
+# 📝 Task Management App
+
+This is a simple **Task Management Web Application** built using **Node.js, Express, and SQLite**.
+It allows users to register, log in, and manage their personal tasks.
+
+---
+
+## 📌 Features
+
+* 🔐 User Signup & Login system
+* 🗂️ Session-based authentication
+* ➕ Add new tasks
+* 📋 View all tasks
+* ✏️ Edit tasks
+* ❌ Delete tasks
+* 🚪 Logout functionality
+
+---
+
+## 🛠️ Technologies Used
+
+* Node.js
+* Express.js
+* SQLite
+* HTML, CSS (Frontend)
+* express-session
+
+---
+
+## 📁 Project Structure
+
+* `server.js` → Main backend server
+* `database.db` → SQLite database
+* `Dashboard.html` → Home page
+* `tasks.html` → Task management UI
+* Other static files → Frontend
+
+---
+
+## ▶️ How to Run
+
+### 1. Install dependencies
+
+```bash
+npm install express sqlite3 express-session
+```
+
+### 2. Run the server
+
+```bash
+node server.js
+```
+
+### 3. Open in browser
+
+```bash
+http://localhost:3000
+```
+
+---
+
+## ⚙️ How It Works
+
+1. User signs up with name, email, and password
+2. User logs in and session is created
+3. User can:
+
+   * Add tasks
+   * View tasks
+   * Edit or delete tasks
+4. All data is stored in SQLite database
+
+---
+
+## ⚠️ Note
+
+* Passwords are stored in plain text (not secure for production)
+* This project is for **learning purposes only**
+
+---
+
+## 👨‍💻 Author
+
+Shujaat Ali
+
+
 Smart Task Login Page:   
 
-<img width="408" height="363" alt="image" src="https://github.com/user-attachments/assets/fe7f0f89-b5ea-4ea0-bcd6-601827c54008" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1d271f98-3678-4224-a3d7-16acadd78610" />
 
 If You Don't have any credential then sign up first:
 
-<img width="425" height="361" alt="image" src="https://github.com/user-attachments/assets/d9444a7d-a109-413b-ba53-201c46a59286" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d49472d3-b1c2-4691-b0c3-c60f6bccadd5" />
 
 Ater Sign Up Login Again, Then You can manage your task record:
 
-<img width="421" height="358" alt="image" src="https://github.com/user-attachments/assets/76285557-8a79-40d2-abdb-eb0f9f426535" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e34665d7-4d10-42d8-a032-6d01c0ceb7f3" />
 
-
-<img width="414" height="246" alt="image" src="https://github.com/user-attachments/assets/37a6d9d7-c118-4b06-8856-a25bc71ef78f" />
+                                                        -----Thank You-----
 
