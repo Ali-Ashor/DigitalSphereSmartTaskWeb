@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <style>
+        body
+        {
+            margin-top: 35px;
+            background: linear-gradient(to right,grey,white);
+        }
+        .d1
+        {
+            width: 350px;
+            margin: 5px auto;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        input
+        {
+            width: 60%;
+            height: 30px;
+        }
+        a
+        {
+            margin: 2px;
+        }
+        form
+        {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">
+<h2 style="text-align: center;">Your Tasks</h2>
+
+<form action="/add-task" method="POST">
+    <input type="text" name="task" placeholder="Enter task" required>
+    <button>Add</button>
+</form>
+
+<ul id="list"></ul>
+
+<script>
+function loadTasks() {
+    fetch('/tasks')
+    .then(res => res.json())
+    .then(data => {
+        const list = document.getElementById('list');
+        list.innerHTML = "";
+
+        data.forEach(t => {
+            list.innerHTML += `
+                <li>
+                    ${t.task}
+                    <a href="/edit-task/${t._id}">Edit</a>
+                    <a href="/delete-task/${t._id}">Delete</a>
+                </li>
+            `;
+        });
+    });
+}
+
+loadTasks();
+</script>
+<a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
